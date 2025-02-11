@@ -1,4 +1,4 @@
-# alquran_digital
+# FLUTTER AL QURAN DIGITAL
 
 A new Flutter project with GET X
 
