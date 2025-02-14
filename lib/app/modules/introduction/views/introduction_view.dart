@@ -24,7 +24,7 @@ class IntroductionView extends GetView<IntroductionController> {
                   fontWeight: FontWeight.bold),
             ),
             SizedBox(
-              height: 20,
+              height: 5,
             ),
             Text(
               "Develop By LABILDEV",
@@ -34,7 +34,7 @@ class IntroductionView extends GetView<IntroductionController> {
               ),
             ),
             SizedBox(
-              height: 40,
+              height: 60,
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(

@@ -4,11 +4,11 @@
 
 import 'dart:convert';
 
-Data detailSurahFromJson(String str) => Data.fromJson(json.decode(str));
+DetailSurah detailSurahFromJson(String str) => DetailSurah.fromJson(json.decode(str));
 
-String detailSurahToJson(Data data) => json.encode(data.toJson());
+String detailSurahToJson(DetailSurah data) => json.encode(data.toJson());
 
-class Data {
+class DetailSurah {
   int number;
   int sequence;
   int numberOfVerses;
@@ -18,7 +18,7 @@ class Data {
   dynamic preBismillah;
   List<Verse> verses;
 
-  Data({
+  DetailSurah({
     required this.number,
     required this.sequence,
     required this.numberOfVerses,
@@ -29,7 +29,7 @@ class Data {
     required this.verses,
   });
 
-  factory Data.fromJson(Map<String, dynamic> json) => Data(
+  factory DetailSurah.fromJson(Map<String, dynamic> json) => DetailSurah(
         number: json["number"],
         sequence: json["sequence"],
         numberOfVerses: json["numberOfVerses"],
